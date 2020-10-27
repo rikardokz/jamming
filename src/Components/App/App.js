@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { SearchBar } from '../SearchBar/SearchBar.js';
 import { SearchResults } from "../SearchResults/SearchResults.js";
