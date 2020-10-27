@@ -1,4 +1,20 @@
 import React from 'react';
+import "./TrackList.css";
+
+const tracks = [
+    { 
+        name: "Tiny Dancer",
+        album: "Elton John | Madman Across The Water"
+    },
+    { 
+        name: "Tiny Dancer",
+        album: "Tim McGraw | Love Story"
+    },
+    { 
+        name: "Tiny Dancer",
+        album: "Ben Folds | Ben Folds Live"
+    }
+]
 
 export class TrackList extends React.Component {
     constructor(props) {
@@ -8,7 +24,15 @@ export class TrackList extends React.Component {
     render() {
         return (
             <div classList="TrackList">
-    {/* <!-- You will add a map method that renders a set of Track components  --> */}
+                { tracks.map(track => {
+                    return (
+                        <div>
+                            <h3>{track.name}</h3>
+                            <p>{track.album}</p>
+                        </div>
+                    )
+                })
+                }
             </div>
         )
     }
